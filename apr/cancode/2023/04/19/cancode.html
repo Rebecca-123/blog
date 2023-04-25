@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Units 5, 9-10 Review | APCSA</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Units 5, 9-10 Review" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="AP Computer Science A" />
+<meta property="og:description" content="AP Computer Science A" />
+<link rel="canonical" href="https://nighthawkcoders.github.io/APCSA/apr/cancode/2023/04/19/cancode.html" />
+<meta property="og:url" content="https://nighthawkcoders.github.io/APCSA/apr/cancode/2023/04/19/cancode.html" />
+<meta property="og:site_name" content="APCSA" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-19T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Units 5, 9-10 Review" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-19T00:00:00-05:00","datePublished":"2023-04-19T00:00:00-05:00","description":"AP Computer Science A","headline":"Units 5, 9-10 Review","mainEntityOfPage":{"@type":"WebPage","@id":"https://nighthawkcoders.github.io/APCSA/apr/cancode/2023/04/19/cancode.html"},"url":"https://nighthawkcoders.github.io/APCSA/apr/cancode/2023/04/19/cancode.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/APCSA/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nighthawkcoders.github.io/APCSA/feed.xml" title="APCSA" /><link rel="shortcut icon" type="image/x-icon" href="/APCSA/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/APCSA/">APCSA</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/APCSA/schedule">Schedule</a><a class="page-link" href="/APCSA/frontend/overview">Frontend</a><a class="page-link" href="/APCSA/api/overview">API</a><a class="page-link" href="/APCSA/search/">Search</a><a class="page-link" href="/APCSA/categories/ap">AP Standards</a><a class="page-link" href="/APCSA/categories/cte">CTE Standards</a><a class="page-link" href="/APCSA/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Units 5, 9-10 Review</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-19T00:00:00-05:00" itemprop="datePublished">
+        Apr 19, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+          <a class="category-tags-link" href="/APCSA/categories/ap#apr">apr</a>
+        
+        &nbsp;
+      
+          <a class="category-tags-link" href="/APCSA/categories/ap#cancode">cancode</a>
+        
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/nighthawkcoders/APCSA/tree/master/_notebooks/2023-04-19-cancode.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/APCSA/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/nighthawkcoders/APCSA/master?filepath=_notebooks%2F2023-04-19-cancode.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSA/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/nighthawkcoders/APCSA/blob/master/_notebooks/2023-04-19-cancode.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/APCSA/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fnighthawkcoders%2FAPCSA%2Fblob%2Fmaster%2F_notebooks%2F2023-04-19-cancode.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/APCSA/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#See-TOC-for-Direct-Links-to-Hacks-and-Extra-Code">See TOC for Direct Links to Hacks and Extra Code </a></li>
+<li class="toc-entry toc-h1"><a href="#Unit-5:-Writing-Classes">Unit 5: Writing Classes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Extra-Code-to-Test-Method-Overloading">Extra Code to Test Method Overloading </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Inheritance">Inheritance </a></li>
+<li class="toc-entry toc-h1"><a href="#Polymorphism">Polymorphism </a></li>
+<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Exercise-1">Exercise 1 </a></li>
+<li class="toc-entry toc-h2"><a href="#Exercise-2">Exercise 2 </a></li>
+<li class="toc-entry toc-h2"><a href="#Exercise-3">Exercise 3 </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-04-19-cancode.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="See-TOC-for-Direct-Links-to-Hacks-and-Extra-Code">
+<a class="anchor" href="#See-TOC-for-Direct-Links-to-Hacks-and-Extra-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>See TOC for Direct Links to Hacks and Extra Code<a class="anchor-link" href="#See-TOC-for-Direct-Links-to-Hacks-and-Extra-Code"> </a>
+</h1>
+<ul>
+<li>They are embedded throughout with the lesson notes</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-5:-Writing-Classes">
+<a class="anchor" href="#Unit-5:-Writing-Classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 5: Writing Classes<a class="anchor-link" href="#Unit-5:-Writing-Classes"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Class: blueprint for creating objects, which have attributes and methods<ul>
+<li>Class declaration: scope, class name<ul>
+<li>Scope: public vs private<ul>
+<li>public: accessible anywhere</li>
+<li>private: only accessible within the class</li>
+<li>Classes are usually all declared as public, instance variables are usually private</li>
+<li>Methods are generally public</li>
+<li>Constructors are always <strong>public</strong><ul>
+<li>Must be used to create the object</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Class body: contains instance variables (store data) and methods (define behavior of object, may return value)</li>
+</ul>
+</li>
+<li>Methods: can take arguments, can be overloaded</li>
+<li>Constructors<ul>
+<li>Initialize attributes</li>
+<li>Same name of class</li>
+<li>No return type</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClassName</span> <span class="p">{</span>
+    <span class="c1">// Class body</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">height</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">Race</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Calculator</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">add</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Extra-Code-to-Test-Method-Overloading">
+<a class="anchor" href="#Extra-Code-to-Test-Method-Overloading" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Code to Test Method Overloading<a class="anchor-link" href="#Extra-Code-to-Test-Method-Overloading"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Calculator</span><span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">add</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Calculator</span> <span class="n">c1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Calculator</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">c1</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
+        <span class="n">Calculator</span> <span class="n">c2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Calculator</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">c2</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">9.9</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Calculator</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>20
+10.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Inheritance">
+<a class="anchor" href="#Inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inheritance<a class="anchor-link" href="#Inheritance"> </a>
+</h1>
+<ul>
+<li>A subclass can inherit the attributes and methods of a superclass using the <code>extends</code> keyword</li>
+<li>Example: <code>Dog</code> class extends the <code>Animal</code> class, and inherits the <code>name</code> instance variable and the <code>speak()</code> method</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Animal</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"I am an animal."</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">Dog</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bark</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Woof!"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Animal</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="p">(</span><span class="s">"Name"</span><span class="p">);</span>
+        <span class="n">a</span><span class="p">.</span><span class="na">speak</span><span class="p">();</span>
+        <span class="n">Dog</span> <span class="n">d</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">(</span><span class="s">"Rufus"</span><span class="p">);</span>
+        <span class="n">d</span><span class="p">.</span><span class="na">speak</span><span class="p">();</span>
+        <span class="n">d</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I am an animal.
+I am an animal.
+Woof!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Polymorphism">
+<a class="anchor" href="#Polymorphism" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polymorphism<a class="anchor-link" href="#Polymorphism"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"I am an animal."</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Woof!"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="p">(</span><span class="kt">int</span> <span class="n">times</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">times</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Woof!"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h1>
+<h2 id="Exercise-1">
+<a class="anchor" href="#Exercise-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exercise 1<a class="anchor-link" href="#Exercise-1"> </a>
+</h2>
+<p>Create a Rectangle class with width and height fields, and getArea() and getPerimeter() methods. Then create a Square class that extends the Rectangle class and has a sideLength field.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Rectangle</span><span class="p">{</span>
+    <span class="c1">// declare attributes</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">width</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">height</span><span class="p">;</span>
+
+    <span class="c1">// no-args constructor</span>
+    <span class="kd">public</span> <span class="nf">Rectangle</span><span class="p">(){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">height</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// constructor</span>
+    <span class="kd">public</span> <span class="nf">Rectangle</span><span class="p">(</span><span class="kt">int</span> <span class="n">width</span><span class="p">,</span> <span class="kt">int</span> <span class="n">height</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">height</span> <span class="o">=</span> <span class="n">height</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// methods</span>
+    <span class="cm">/*</span>
+<span class="cm">     * getArea()</span>
+<span class="cm">     * return area by multiply width and height</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getArea</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="cm">/*</span>
+<span class="cm">    * getPerimeter()</span>
+<span class="cm">    * return perimeter by adding side lengths</span>
+<span class="cm">    */</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPerimeter</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">width</span> <span class="o">+</span> <span class="n">height</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Rectangle</span> <span class="n">r1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Area: "</span> <span class="o">+</span> <span class="n">r1</span><span class="p">.</span><span class="na">getArea</span><span class="p">());</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Perimeter: "</span> <span class="o">+</span> <span class="n">r1</span><span class="p">.</span><span class="na">getPerimeter</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Rectangle</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Area: 50
+Perimeter: 30
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Square</span> <span class="kd">extends</span> <span class="n">Rectangle</span><span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">sideLength</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Square</span><span class="p">(</span><span class="kt">int</span> <span class="n">sideLength</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">sideLength</span> <span class="o">=</span> <span class="n">sideLength</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">sideLength</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">height</span> <span class="o">=</span> <span class="n">sideLength</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Square</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Square</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+        <span class="n">s1</span><span class="p">.</span><span class="na">getArea</span><span class="p">();</span>
+        <span class="n">s1</span><span class="p">.</span><span class="na">getPerimeter</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">this.width</span><span class="ansi-black-intense-fg ansi-bold"> = sideLength;</span>
+<span class="ansi-red-intense-fg ansi-bold">width has private access in Rectangle</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">this.height</span><span class="ansi-black-intense-fg ansi-bold"> = sideLength;</span>
+<span class="ansi-red-intense-fg ansi-bold">height has private access in Rectangle</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exercise-2">
+<a class="anchor" href="#Exercise-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exercise 2<a class="anchor-link" href="#Exercise-2"> </a>
+</h2>
+<p>Create a Person class with firstName and lastName fields, and a getFullName() method. Then create a Student class that extends the Person class and has a major field and a getMajor() method.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// superclass</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span><span class="p">{</span>
+    <span class="c1">// instance variables</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">firstName</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">lastName</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getFullName</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">firstName</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">lastName</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// subclass inheriting from Person</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="n">Person</span><span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">major</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getMajor</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">major</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exercise-3">
+<a class="anchor" href="#Exercise-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exercise 3<a class="anchor-link" href="#Exercise-3"> </a>
+</h2>
+<p>Create an Animal class with a speak() method that prints "I am an animal." Then create a Cat class and a Dog class that extend the Animal class and</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Animal</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">speak</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"I am an animal."</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">Dog</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bark</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Woof!"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">Cat</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">){</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">meow</span><span class="p">(){</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Meow!"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Animal</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="p">(</span><span class="s">"Name"</span><span class="p">);</span>
+        <span class="n">a</span><span class="p">.</span><span class="na">speak</span><span class="p">();</span>
+        <span class="n">Dog</span> <span class="n">d</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">(</span><span class="s">"Rufus"</span><span class="p">);</span>
+        <span class="n">d</span><span class="p">.</span><span class="na">speak</span><span class="p">();</span>
+        <span class="n">d</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span>
+        <span class="n">Cat</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cat</span><span class="p">(</span><span class="s">"Cat"</span><span class="p">);</span>
+        <span class="n">c</span><span class="p">.</span><span class="na">speak</span><span class="p">();</span>
+        <span class="n">c</span><span class="p">.</span><span class="na">meow</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I am an animal.
+I am an animal.
+Woof!
+I am an animal.
+Meow!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="nighthawkcoders/APCSA"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/APCSA/apr/cancode/2023/04/19/cancode.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/APCSA/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://nighthawkcoders.github.io/APCSA/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/APCSA/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>AP Computer Science A</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/APCSA/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/APCSA/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/APCSA/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
